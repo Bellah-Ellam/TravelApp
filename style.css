@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family:'Lato', sans-serif;;
+}
+
+/* Navbar Start */
+#navbar{
+
+    background: #f9f9f9;
+}
+#logo{
+    font-size: 36px;
+    font-weight: 500;
+    color: black;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 5px;
+}
+
+#logo span{
+    color: #ffa500;
+}
+.navbar-toggler span{
+    color: #ffa500;
+}
+.navbar-nav{
+    margin-left: 20px;
+}
+.nav-item .nav-link{
+    font-size: 16px;
+    font-weight: 550;
+    color: black;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.5s ease;
+}
+.nav-item .nav-link:hover{
+    background: #ffa500;
+    color: white;
+}
+#navbar form button{
+    background: #ffa500;
+    color: white;
+    border: none;
+}
+/* Navbar End */
+
+
+
+/* Home Section Start*/
+.home{
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(./images/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home .content{
+    text-align: center;
+    padding-top: 200px;
+}
+.home .content h5{
+    color: white;
+    font-size: 38px;
+    font-weight: 500;
+    text-shadow: 0px 1px 1px black;
+}
+.home .content h1{
+    color: white;
+    font-size: 70px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black; 
+    margin-top: 5px;
+}
+.change-content::after{
+    content: ' ';
+    color: #ffa500;
+    text-shadow: 0px 1px 1px black;
+    animation: changetext 10s infinite linear;
+}
+
+@keyframes changetext{
+    0%{content: " France";}
+    10%{content: " Kenya";}
+    20%{content: " Bali";}
+    30%{content: " Greece";}
+    40%{content: " Maldives";}
+    50%{content: " Como-Italy";}
+    60%{content: " Dubai";}
+    70%{content: " Mexico";}
+    80%{content: " Bahamas";}
+    90%{content: " Korea";}
+    100%{content: " Singapore";}
+
+
+
+
+}
+.home .content p{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+.home .content a{
+    padding: 10px;
+    background: white;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 550;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+    
+}
+.home .content a:hover{
+    background: #ffa500;
+    color: white;
+}
+
+@media (max-width:850px){
+    .home{
+        background-position: 50%;}
+}
+@media (max-width:850px){
+    .home .content h5{
+        font-size: 25px;}
+    .home .content h1{
+        font-size: 38px;
+    }
+    .home .content p{
+        font-size: 13px;
+    }
+}
+/* Home Section End*/
+
+
+/* Booking Section Start */
+
+.book{
+    background: #f9f9f9;
+    padding: 50px;
+}
+
+.main-text h1{
+    text-align: center;
+    text-shadow: 0px 1px 1px black;
+    font-weight: 600;
+
+}
+
+.main-text h1 span{
+    color: #ffa500;
+}
+
+/* Booking Section End */
