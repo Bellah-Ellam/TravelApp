@@ -22,7 +22,7 @@ Web browser of choice preferably Chrome
 # Running
 Run the following link through your broswer to view the app;
 
-https://kimathinjoki.github.io/Wk3-code-challenge-Flatdango/
+https://bellah-ellam.github.io/TravelApp/
 
 
 You make a booking by clicking on the Submit button after filling out your details.
