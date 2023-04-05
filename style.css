@@ -207,9 +207,16 @@
     color: #ffa500;
 }
 .book .card{
-
+    /* width: 50%; */
+    height:100%;
     border-radius: 10px;
     box-shadow: 0px 5px 5px -6px black;
+
+}
+.book .card img{
+    height:100%;
+    border-radius: 10px;
+
 }
 
 .book .row{
