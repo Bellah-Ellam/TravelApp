@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
          }
   
       // Send a POST request to the server with the form data
-      fetch('http://localhost:3000/bookings', {
+      fetch('https://msafiri-travelapp.onrender.com/bookings', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

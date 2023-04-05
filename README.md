@@ -13,6 +13,9 @@ Book affordable accomodation
 Choose if they'd like a tour guide
 Get other services including food & drinks
 
+# Tools
+The application is built using CSS, HTML, JavaScript and Bootstrap5
+
 # Requirements
 Web browser of choice preferably Chrome
 
@@ -22,7 +25,7 @@ Run the following link through your broswer to view the app;
 https://kimathinjoki.github.io/Wk3-code-challenge-Flatdango/
 
 
-You can buy a ticket by clicking on the Submit button after filling out your details.
+You make a booking by clicking on the Submit button after filling out your details.
 
 # Author
 This Project was contributed by: Bellah Ellam
