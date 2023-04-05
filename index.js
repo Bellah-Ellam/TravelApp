@@ -1,45 +1,44 @@
-// Get the submit button element
-const submitBtn = document.querySelector('.submit');
+document.addEventListener('DOMContentLoaded', () => {
+    // Get the form element
+    const form = document.querySelector('#form');
+  
+    // Listen for form submission event
+    form.addEventListener('submit', (e) => {
+      e.preventDefault(); // prevent default form submission
+  
+      // Get the form data
+    //   const formData = new FormData(form);
+        const from = document.getElementById('from')
+        const to = document.getElementById('to')
+        const noOfTickets = document.getElementById('noOfTickets')
+        const departure = document.getElementById('departure')
+        const arrival = document.getElementById('arrival')
+        const nameAndDetails = document.getElementById('details')
 
-// Add event listener to the submit button
-submitBtn.addEventListener('click', (event) => {
-  event.preventDefault(); // Prevent the default form submission
-
-  // Get the form input values
-  const from = document.querySelector('input[placeholder="From"]').value;
-  const to = document.querySelector('input[placeholder="To"]').value;
-  const noOfTickets = document.querySelector('input[placeholder="No of Tickets"]').value;
-  const departure = document.querySelector('input[placeholder="Depature"]').value;
-  const arrival = document.querySelector('input[placeholder="Arrival"]').value;
-  const nameAndDetails = document.querySelector('textarea[name="text"]').value;
-
-  // Retrieve data from db.json using fetch API
-  fetch('db.json')
-    .then(response => response.json())
-    .then(data => {
-      // Add new data to the existing data
-      const newData = {
-        from: from,
-        to: to,
-        noOfTickets: noOfTickets,
-        departure: departure,
-        arrival: arrival,
-        nameAndDetails: nameAndDetails
-      };
-
-      data.push(newData); // Add the new data to the existing data
-
-      // Update the db.json file with the new data using fetch API and PATCH method
-      fetch('db.json', {
-        method: 'PATCH',
+        const formData = {
+            from:from.value,
+            to:to.value,
+            noOfTickets:noOfTickets.value,
+            departure:departure.value,
+            arrival:arrival.value,
+            nameAndDetails:nameAndDetails.value
+         }
+  
+      // Send a POST request to the server with the form data
+      fetch('http://localhost:3000/bookings', {
+        method: 'POST',
         headers: {
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify(data)
+        body: JSON.stringify(
+        formData
+        )
       })
-        .then(response => response.json())
-        .then(data => console.log(data))
-        .catch(error => console.error(error));
-    })
-    .catch(error => console.error(error));
-});
+      .then(response => response.json())
+      .then(data => console.log(data))
+      .catch(error => console.error(error));
+  
+      // Reset the form
+      form.reset();
+    });
+  });

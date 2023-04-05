@@ -21,7 +21,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
 
-
+    <script src="index.js"></script>
 </head>
 <body>
 
@@ -230,14 +230,14 @@
                 </div>
 
             <div class="col-md-6 py-3 py-md-0">
-                <form action="#">
+                <form id="form" action="#">
             
-                    <input type="text" class="form-control" placeholder="From" required><br>
-                    <input type="text" class="form-control" placeholder="To" required><br>
-                    <input type="text" class="form-control" placeholder="No of Tickets" required><br>
-                    <input type="date" class="form-control" placeholder="Depature" required><br>
-                    <input type="date" class="form-control" placeholder="Arrival" required><br>
-                    <textarea class="form-control" rows="5" name="text" placeholder="Enter Your Name & Details"></textarea>
+                    <input type="text" class="form-control" placeholder="From" id="from" required><br>
+                    <input type="text" class="form-control" placeholder="To" id="to" required><br>
+                    <input type="text" class="form-control" placeholder="No of Tickets" id="noOfTickets" required><br>
+                    <input type="date" class="form-control" placeholder="Departure" id="departure" required><br>
+                    <input type="date" class="form-control" placeholder="Arrival" id="arrival" required><br>
+                    <textarea class="form-control" rows="5" name="text" placeholder="Enter Your Name & Details" id="details"></textarea>
                     <input type="submit" value="Submit Booking" class="submit" required>
             
                 </form>
