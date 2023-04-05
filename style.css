@@ -153,11 +153,13 @@
     color: #ffa500;
 }
 .packages .card{
+    /* height: 80%; */
     border-radius: 5px;
     border: none;
     box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
 }
 .packages .card img{
+    /* height: 50%; */
     border-radius: 5px;
 }
 .packages .card .card-body{
