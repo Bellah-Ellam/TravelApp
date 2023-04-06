@@ -16,6 +16,8 @@ Get other services including food & drinks
 # Tools
 The application is built using CSS, HTML, JavaScript and Bootstrap5
 
+It also utilizes a Json file as a local server where new user details are captured once they submit a booking
+
 # Requirements
 Web browser of choice preferably Chrome
 
