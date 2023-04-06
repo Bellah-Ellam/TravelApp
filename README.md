@@ -28,7 +28,7 @@ https://bellah-ellam.github.io/TravelApp/
 You make a booking by clicking on the Submit button after filling out your details.
 
 # Author
-This Project was contributed by: Bellah Ellam
+This Project was contributed by: Bellah Ellam.
 
 License
 This project is licenced under: ISC
